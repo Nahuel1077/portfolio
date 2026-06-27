@@ -9,9 +9,9 @@ export default function Home() {
   const [current, setCurrent] = useState(0);
   const [animation, setAnimation] = useState("animate__fadeIn");
   const works = [
-      {id:0, title:"Medixperts", image:"/img/medixperts.jpg", descriptionEN:"Website for online medical interpretation courses.", descriptionES:"Sitio web para una plataforma online de cursos de interpretación médica. Incluidas prácticas y tests.", link:"www.app.vercel.medixperts"},
-      {id:1, title:"Altos de Lagunitas", image:"/img/altosdelagunitas.jpg", descriptionEN:"Website for a cabin complex located in Villa General Belgrano, Córdoba.", descriptionES:"Sitio web para un complejo de cabañas ubicado en Villa General Belgrano, Córdoba.", link:"www.altosdelagunitas.com"},
-      {id:2, title:"SuMuebles", image:"/img/sumuebles.jpg", descriptionEN:"Website for a carpentry fabric, specialized on kitchens, living rooms, banitories, and bedroom furniture.", descriptionES:"Sitio web para una fábrica de carpintería, especializados en muebles de cocina, living, baños, y dormitorios.", link:"www.sumuebles.com"},
+      {id:0, title:"Medixperts", image:"/img/medixperts.jpg", descriptionEN:"Website for online medical interpretation courses.", descriptionES:"Sitio web para una plataforma online de cursos de interpretación médica. Incluidas prácticas y tests.", link:"https://www.app.vercel.medixperts"},
+      {id:1, title:"Altos de Lagunitas", image:"/img/altosdelagunitas.jpg", descriptionEN:"Website for a cabin complex located in Villa General Belgrano, Córdoba.", descriptionES:"Sitio web para un complejo de cabañas ubicado en Villa General Belgrano, Córdoba.", link:"https://www.altosdelagunitas.com"},
+      {id:2, title:"SuMuebles", image:"/img/sumuebles.jpg", descriptionEN:"Website for a carpentry fabric, specialized on kitchens, living rooms, banitories, and bedroom furniture.", descriptionES:"Sitio web para una fábrica de carpintería, especializados en muebles de cocina, living, baños, y dormitorios.", link:"https://www.sumuebles.com"},
   ]
 
   const nextImage = () => {
@@ -85,6 +85,7 @@ export default function Home() {
 
                 <h1 className="text-2xl">{works[current].title}</h1>
                 <h6 className="w-[600px] text-center">{language === "Spanish"? (works[current].descriptionES):(works[current].descriptionEN)}</h6>
+                <Link href={works[current].link} className="text-blue-500 underline hover:text-black hover:no-underline">{works[current].link.replace("https://", "")}</Link>
                 
                 <button
                   onClick={prevImage}
@@ -160,7 +161,7 @@ export default function Home() {
           <div className="flex flex-row gap-2 md:gap-8 items-center">
             <Link href="mailto:nahuh08@gmail.com"><Image alt="Gmail" width={60} height={60} src="/img/gmail.svg" className="hover:opacity-75"/></Link>
             <Link href="https://www.linkedin.com/in/nahuel-ezequiel-henriquez-/"><Image alt="LinkedIn" width={60} height={60} src="/img/linkedin.svg" className="hover:opacity-75"/></Link>
-            <Link href="www.github.com/Nahuel1077"><Image alt="Github" width={60} height={60} src="/img/github.svg" className="hover:opacity-75"/></Link>
+            <Link href="https://www.github.com/Nahuel1077"><Image alt="Github" width={60} height={60} src="/img/github.svg" className="hover:opacity-75"/></Link>
             <Link href="https://wa.link/wkr6kp"><Image alt="WhatsApp" width={60} height={60} src="/img/whatsapp.svg" className="hover:opacity-75"/></Link>
           </div>
         </section>
