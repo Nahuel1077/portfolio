@@ -1,0 +1,14 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+	<style>
+		.s0 { fill: #4285f4 } 
+		.s1 { fill: #ea4335 } 
+		.s2 { fill: #34a853 } 
+		.s3 { fill: #c5221f } 
+		.s4 { fill: #fbbc04 } 
+	</style>
+	<path class="s0" d="m158 391v-142l-82-63v175q0 30 30 30"/>
+	<path class="s1" d="m154 248l102 77 102-77v-98l-102 77-102-77"/>
+	<path class="s2" d="m354 391v-142l82-63v175q0 30-30 30"/>
+	<path class="s3" d="m76 188l82 63v-98l-30-23c-27-21-52 0-52 26"/>
+	<path class="s4" d="m436 188l-82 63v-98l30-23c27-21 52 0 52 26"/>
+</svg>
