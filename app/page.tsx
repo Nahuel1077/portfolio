@@ -12,6 +12,7 @@ export default function Home() {
       {id:0, title:"Medixperts", image:"/img/medixperts.jpg", descriptionEN:"Website for online medical interpretation courses.", descriptionES:"Sitio web para una plataforma online de cursos de interpretación médica. Incluidas prácticas y tests.", link:"https://www.app.vercel.medixperts"},
       {id:1, title:"Altos de Lagunitas", image:"/img/altosdelagunitas.jpg", descriptionEN:"Website for a cabin complex located in Villa General Belgrano, Córdoba.", descriptionES:"Sitio web para un complejo de cabañas ubicado en Villa General Belgrano, Córdoba.", link:"https://www.altosdelagunitas.com"},
       {id:2, title:"SuMuebles", image:"/img/sumuebles.jpg", descriptionEN:"Website for a carpentry fabric, specialized on kitchens, living rooms, banitories, and bedroom furniture.", descriptionES:"Sitio web para una fábrica de carpintería, especializados en muebles de cocina, living, baños, y dormitorios.", link:"https://www.sumuebles.com"},
+      {id:3, title:"Mobilinova", image:"/img/mobilinova.png", descriptionEN:"Website for a small furniture fabric, specializing in modern and minimalist designs.", descriptionES:"Sitio web para una fábrica de muebles pequeña, especializada en diseños modernos y minimalistas.", link:"https://mobilinova.vercel.app/"},
   ]
 
   const nextImage = () => {
