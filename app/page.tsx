@@ -68,24 +68,24 @@ export default function Home() {
               {language === "Spanish"? ("Desarrollador Web"):("Web Developer")}
             </p>
           </div>
-          <section id="works" className="flex w-full flex-col items-center justify-between md:pb-32 lg:gap-12 animate__animated animate__fadeIn">
+          <section id="works" className="flex w-full flex-col items-center justify-between md:pb-32 gap-8 lg:gap-12 animate__animated animate__fadeIn">
             <div className="w-full text-center">
               <h1 className="text-4xl">{language === "Spanish"? ("Proyectos"):("Projects")}</h1>
               <p>{language === "Spanish"? ("Mira en lo que he trabajado"):("Take a look at what I've done")}</p>
             </div>
-            <div className="flex-row gap-4 items-center justify-center w-max-[800px] w-[800px] hidden lg:flex border-[23px] border-black text-black rotate-[2deg] bg-white">
-              <div className="flex flex-col items-center w-full h-auto relative overflow-hidden p-[40px]">
+            <div className="flex-row gap-4 items-center justify-center w-max-[800px] w-full lg:w-[800px] flex border-[23px] border-black text-black lg:rotate-[2deg] bg-white">
+              <div className="flex flex-col items-center w-full h-auto relative overflow-hidden lg:p-[40px]">
                 <Image
                   width={800}
                   height={430}
                   src={works[current].image}
                   alt={`Imagen ${current + 1}`}
-                  className={`w-full h-[400px] animate__animated ${animation} object-cover sm:object-scale-down`}
+                  className={`w-full lg:h-[400px] animate__animated ${animation} object-scale-down`}
                   id={`Imagen ${current + 1}`}
                 />
 
                 <h1 className="text-2xl">{works[current].title}</h1>
-                <h6 className="w-[600px] text-center">{language === "Spanish"? (works[current].descriptionES):(works[current].descriptionEN)}</h6>
+                <h6 className="lg:w-[600px] text-center">{language === "Spanish"? (works[current].descriptionES):(works[current].descriptionEN)}</h6>
                 <Link href={works[current].link} className="text-blue-500 underline hover:text-black hover:no-underline">{works[current].link.replace("https://", "")}</Link>
                 
                 <button
@@ -103,7 +103,7 @@ export default function Home() {
                 </button>
               </div>
             </div>
-            <div className="flex flex-col items-center gap-4 p-4">
+            {/* <div className="flex flex-col items-center gap-4 p-4">
               {works.map((i)=>(
                 <div key={i.id} className="w-full lg:hidden border-2 border-zinc-400 gap-2 text-center rounded-2xl flex flex-col justify-between bg-[#00000063]">
                   <Image
@@ -119,7 +119,7 @@ export default function Home() {
                 <Link href={i.link} className="text-blue-400 hover:underline">Link</Link>
                 </div>
               ))}
-            </div>
+            </div> */}
           </section>
         </main>
         <section id="about" className="flex w-full flex-col gap-12 md:gap-0 p-6 lg:flex-row items-center md:items-start justify-between md:py-32 md:px-32">
